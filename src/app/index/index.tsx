@@ -1,21 +1,31 @@
-import { Text, View} from "react-native"
+///import { Text, View} from "react-native"
 
+import {View, Image, TouchableOpacity} from "react-native"
+import { MaterialIcons } from "@expo/vector-icons"
 import {styles} from "./styles"
+import {colors} from "@/styles/colors"
 
-export default function Index(){
-    return (
-     <View style={styles.container}>
-        {/*Mas é possível realizar com o StyleSheet*/ }
-        <Text style={styles.title}>Hello </Text>
-        <Text style={styles.title}>React Native!</Text>
+///////Apenas exemplo. ///////
+//export default function Index(){
+//    return (
+  
+       // <View style={styles.container}>
+   
+      //Mas é possível realizar com o StyleSheet
+      //  <Text style={styles.title}>Hello </Text>
+      //<Text style={styles.title}>React Native!</Text>
+        // }
+      
+       //Abaixo foi colocado o style, inline para colocar as  //configurações do teste*
+     //<Text style={{color:"red", fontSize:22}}>Meu App</Text>
+    // </View>   
 
-       {/*Abaixo foi colocado o style, inline para colocar as configurações do teste*/} 
-       {/*<Text style={{color:"red", fontSize:22}}>Meu App</Text>*/} 
-    </View>   
-    )
-}
+  
+  //    )
+//}
+///////Apenas exemplo. ///////
 
-
+///////Apenas exemplo. ///////
 /*Parte abaixo, copiada para o styles.ts*/
 //const styles = StyleSheet.create({
 /*O Flex box abaixo no container é padrão, diferente do web.*/ 
@@ -38,3 +48,19 @@ export default function Index(){
         fontSize: 22,
     }
 }) */
+///////Apenas exemplo. ///////
+
+///////Referente ao projeto ///////
+export default function Index(){
+  return (
+    <View style={styles.container}>
+        <View style={styles.header}>
+            <Image source={require("@/assets/logo.png")} style={styles.logo} />
+             <TouchableOpacity activeOpacity={0.5} > 
+                <MaterialIcons name="add" size={32} color={colors.green[300]}></MaterialIcons>
+              </TouchableOpacity>
+        </View>
+    </View>
+  )
+ }
+    
