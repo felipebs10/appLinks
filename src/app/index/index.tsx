@@ -5,6 +5,9 @@ import { MaterialIcons } from "@expo/vector-icons"
 import {styles} from "./styles"
 import {colors} from "@/styles/colors"
 
+/*Import sem o defautl do componente tem que ser o mesmo nome*/
+import {Category} from "@/components/category"
+
 ///////Apenas exemplo. ///////
 //export default function Index(){
 //    return (
@@ -60,6 +63,7 @@ export default function Index(){
                 <MaterialIcons name="add" size={32} color={colors.green[300]}></MaterialIcons>
               </TouchableOpacity>
         </View>
+        <Category/>
     </View>
   )
  }
