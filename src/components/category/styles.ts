@@ -11,6 +11,8 @@ export const styles = StyleSheet.create({
     name: {
         fontSize: 16, 
         fontWeight: "600",
-        color: colors.gray[400],
+        // Ele triou a cor para devido a cor de seleção para ser independente.
+        //   color: colors.gray[400],
+     
     },
 })
