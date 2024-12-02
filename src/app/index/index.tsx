@@ -5,7 +5,7 @@ import { MaterialIcons } from "@expo/vector-icons"
 import {styles} from "./styles"
 import {colors} from "@/styles/colors"
 import { Categories } from "@/components/categories"
-
+import { Link } from "@/components/link"
 //import { categories } from "@/utils/categories"
 
 /*Import sem o defautl do componente tem que ser o mesmo nome*/
@@ -85,6 +85,12 @@ export default function Index(){
        */ } 
        
        <Categories />
+
+       <Link
+             name="Rocketseat" 
+             url="https://www.rocketseat.com.br/"
+             onDetails={() => console.log("Clicou!")}
+        />
     </View>
   )
  }
